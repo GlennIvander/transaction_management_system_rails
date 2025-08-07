@@ -22,29 +22,34 @@ This Ruby on Rails application allows users to manage financial transactions sto
    ```
 3. Install dependencies:
    ```bash
+   # Desktop/transaction_management_system_rails
    bundle install
    yarn install
    ```
    
 5. Prepare the CSV:
    ```bash
+   # Desktop/transaction_management_system_rails
    db/seeds/transactions-sample.csv # You can edit it or replace it with your own data.
    ```
 
 ## 🗄️ (Optional) Database creation
   Although this app works with a CSV file, if you plan to use database-backed features like user authentication:
   ```bash
+  # Desktop/transaction_management_system_rails
   rails db:create
   rails db:migrate
   ```
 
 ## 🔌 Database initialization
   ```bash
+   # Desktop/transaction_management_system_rails
   bin/rails csv:quote_all_fields
    ```
 
 ## 🚀 Running the Application
    ```bash
+   # Desktop/transaction_management_system_rails
   bin/dev # This will start both the Rails server and Tailwind CSS
    ```
   Then visit in your browser: http://localhost:3000
