@@ -53,7 +53,7 @@ This Ruby on Rails application allows users to manage financial transactions sto
   bin/dev # This will start both the Rails server and Tailwind CSS
    ```
   Then visit in your browser: http://localhost:3000
-  Enjoy and make your first transaction!😊
+Enjoy and make your first transaction!😊
 
 ## Services & Tools Used
   - Hotwire (Turbo + Stimulus) for interactivity
