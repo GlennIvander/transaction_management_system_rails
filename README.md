@@ -43,13 +43,13 @@ This Ruby on Rails application allows users to manage financial transactions sto
 
 ## 🔌 Database initialization
   ```bash
-   # Desktop/transaction_management_system_rails
+  # Desktop/transaction_management_system_rails
   bin/rails csv:quote_all_fields
    ```
 
 ## 🚀 Running the Application
    ```bash
-   # Desktop/transaction_management_system_rails
+  # Desktop/transaction_management_system_rails
   bin/dev # This will start both the Rails server and Tailwind CSS
    ```
   Then visit in your browser: http://localhost:3000
