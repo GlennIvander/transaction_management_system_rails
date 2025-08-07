@@ -1,0 +1,12 @@
+<tr class="border-b ">
+  <td class="px-4 py-2"><%= transaction.transaction_date %></td>
+  <td class="px-4 py-2"><%= formatted_account_number(transaction.account_number) %></td>
+  <td class="px-4 py-2"><%= transaction.account_holder_name %></td>
+  <td class="px-4 py-2"><%= formatted_currency(transaction.amount) %></td>
+  <td class="px-4 py-2">
+    <span class="inline-block px-4 py-2 rounded-full text-xs font-semibold
+      <%= status_color_class(transaction.status) %>">
+      <%= transaction.status %>
+    </span>
+  </td>
+</tr>

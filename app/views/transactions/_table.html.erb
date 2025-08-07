@@ -1,0 +1,17 @@
+<table class="min-w-full table-fixed text-m">
+  <thead class="bg-gray-200">
+    <tr>
+      <th class="px-4 py-2 text-left w-1/5">Transaction Date (YYYY-MM-DD)</th>
+      <th class="px-4 py-2 text-left w-1/5">Account Number</th>
+      <th class="px-4 py-2 text-left w-1/5">Account Holder Name</th>
+      <th class="px-4 py-2 text-left w-1/5">Amount</th>
+      <th class="px-4 py-2 text-left w-1/10">Status</th>
+    </tr>
+  </thead>
+  <tbody id="transactions">
+    <%= render partial: "transactions/row", collection: @transactions, as: :transaction %>
+    <tr>
+      <td colspan="5" class="text-center py-4">End of transactions</td>
+    </tr>
+  </tbody>
+</table>

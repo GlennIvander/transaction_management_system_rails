@@ -1,0 +1,21 @@
+<%= turbo_stream.prepend "transactions", partial: "transactions/row", locals: { transaction: @transaction } %>
+
+<%= turbo_stream.update "transaction_count" do %>
+  <%= @transaction_count %>
+<% end %>
+
+<%= turbo_stream.update "transaction_form" do %>
+  <%= render "form", transaction: Transaction.new %>
+<% end %>
+
+<%= turbo_stream.replace "flash" do %>
+  <turbo-frame id="flash">
+    <div id="flash-notice" class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-4 py-2 rounded shadow transition-opacity duration-500 z-50">
+      <%= flash[:notice] %>
+    </div>
+  </turbo-frame>
+<% end %>
+
+<%= turbo_stream.replace "transactions" do %>
+  <%= render partial: "transactions/row", collection: @transactions, as: :transaction %>
+<% end %>
